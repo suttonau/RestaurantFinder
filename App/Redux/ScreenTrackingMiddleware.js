@@ -11,7 +11,7 @@ const getCurrentRouteName = (navigationState) => {
     return getCurrentRouteName(route)
   }
   return route.routeName
-}
+};
 
 const screenTracking = ({ getState }) => next => (action) => {
   if (
@@ -33,6 +33,6 @@ const screenTracking = ({ getState }) => next => (action) => {
     }
   }
   return result
-}
+};
 
 export default screenTracking
