@@ -1,13 +1,9 @@
 import React from 'react'
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native'
-import BusinessDetail from './BusinessDetail'
+import CategoryDetail from './CategoryDetail'
 import { withNavigation } from 'react-navigation'
 
 const ListView = ({ title, results, navigation }) => {
-  if (!results.length) {
-    return null
-  }
-
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
